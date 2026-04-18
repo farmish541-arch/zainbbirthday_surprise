@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Zainab 🎉</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      text-align: center;
+      padding: 20px;
+      color: #333;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    h1 {
+      color: #ff4b5c;
+    }
+    button {
+      background: #ff4b5c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    button:hover {
+      background: #ff1e3c;
+    }
+    .hidden {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .balloons {
+      position: absolute;
+      top: -50px;
+      width: 100%;
+      animation: float 6s infinite linear;
+    }
+    @keyframes float {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(800px); }
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+  <h1>🎂 Happy Birthday Zainab 🎂</h1>
+  <p>To my Pasandida Aurat 💖</p>
+
+  <p>
+    May your day be filled with endless smiles, laughter, and sweet surprises! 🎁✨<br>
+    You deserve happiness, success, and all the beautiful things life can offer 🌸
+  </p>
+
+  <button onclick="showSurprise()">Click for Surprise 🎉</button>
+
+  <div id="surprise" class="hidden">
+    🎊 Surprise!!! 🎊<br><br>
+    💫 May all your dreams come true<br>
+    🌟 May success follow you everywhere<br>
+    💖 May your smile never fade<br>
+    🎂 And may your life be as sweet as cake!
+  </div>
+
+  <button onclick="funMessage()">Another Fun Wish 😄</button>
+
+  <div id="fun" class="hidden">
+    😂 Fun Fact: You are officially older... but definitely not wiser 😜<br>
+    Just kidding! You're amazing the way you are 💕
+  </div>
+</div>
+
+<script>
+function showSurprise() {
+  document.getElementById('surprise').style.display = 'block';
+}
+
+function funMessage() {
+  document.getElementById('fun').style.display = 'block';
+}
+</script>
+
+</body>
+</html>
